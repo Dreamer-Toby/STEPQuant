@@ -1,0 +1,22 @@
+{
+  "evalplus": {
+    "url": "https://github.com/evalplus/evalplus.git",
+    "revision": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e"
+  },
+  "LiveCodeBench": {
+    "url": "https://github.com/LiveCodeBench/LiveCodeBench.git",
+    "revision": "28fef95ea8c9f7a547c8329f2cd3d32b92c1fa24"
+  },
+  "IFBench": {
+    "url": "https://github.com/allenai/IFBench.git",
+    "revision": "1c40f0c10d9b5c5c2f10a175a28007ebb64f7f4d"
+  },
+  "matharena": {
+    "url": "https://github.com/eth-sri/matharena.git",
+    "revision": "b89f2f0ad64ced464d2944f08c3c0aaeaa0df64b"
+  },
+  "gpqa": {
+    "url": "https://github.com/idavidrein/gpqa.git",
+    "revision": "56686c06f5e19865c153de0fdb11be3890014df7"
+  }
+}

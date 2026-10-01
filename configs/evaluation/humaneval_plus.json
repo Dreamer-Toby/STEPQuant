@@ -1,0 +1,26 @@
+{
+  "name": "humaneval_plus",
+  "workload": "long",
+  "samples": 5,
+  "seed": 0,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 65536
+  },
+  "dataset": {
+    "repo": "evalplus/humanevalplus",
+    "subset": null,
+    "split": "test"
+  },
+  "grader": "evalplus",
+  "chat_template_kwargs": {
+    "enable_thinking": true
+  },
+  "protocol_notes": [
+    "Sampling settings from STEPQuant Sec.5.1.",
+    "Prompt templates and reasoning extraction are implementation choices; implemented in stepquant/evaluation/prepare.py and grade.py."
+  ],
+  "expected_tasks": 164
+}

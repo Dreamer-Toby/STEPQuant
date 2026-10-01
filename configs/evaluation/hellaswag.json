@@ -1,0 +1,25 @@
+{
+  "name": "hellaswag",
+  "workload": "short",
+  "samples": 1,
+  "seed": 0,
+  "sampling": {
+    "temperature": 0.0,
+    "max_tokens": 2048
+  },
+  "dataset": {
+    "repo": "Rowan/hellaswag",
+    "subset": null,
+    "split": "validation",
+    "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76"
+  },
+  "grader": "generated_exact_match",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "few_shot": 0,
+  "protocol_notes": [
+    "Zero-shot greedy generation, at most 2048 output tokens, thinking explicitly disabled."
+  ],
+  "expected_tasks": 10042
+}

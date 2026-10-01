@@ -1,0 +1,52 @@
+{
+  "scope": "Symmetric STEPQuant@6 decode, 128 input and 1024 output tokens, five batch sizes, three rounds.",
+  "baseline": "Native FP32 recurrent state; BF16 model weights on both sides.",
+  "storage_note": "Tightly packed calibrated 4/6/8-bit codes and FP16 pivots; one weighted fit per update.",
+  "environment": {
+    "CUDA_DEVICE_MAX_CONNECTIONS": "8",
+    "CUDA_HOME": "artifacts/cuda13"
+  },
+  "common_arguments": [
+    "--devices", "0,1,2,3",
+    "--state-format", "stepquant6",
+    "--state-storage", "packed",
+    "--fit-mode", "requantize",
+    "--workload", "long",
+    "--mem-fraction-static", "0.92",
+    "--context-length", "2048",
+    "--prompt-mode", "matrix",
+    "--prompt-tokens", "128",
+    "--output-tokens", "1024",
+    "--rounds", "3",
+    "--random-seed", "42",
+    "--moe-config-dir", "configs/kernels/sglang"
+  ],
+  "models": {
+    "qwen": {
+      "model_arguments": [
+        "--model", "/home/yaobc/model/Qwen3.8-27B",
+        "--plan", "artifacts/reproduction/plans/qwen-stepquant6.pt"
+      ],
+      "batches": {
+        "32": ["--batch", "32"],
+        "64": ["--batch", "64"],
+        "128": ["--batch", "128"],
+        "256": ["--batch", "256"],
+        "512": ["--batch", "512", "--attention-backend", "flashinfer"]
+      }
+    },
+    "kimi": {
+      "model_arguments": [
+        "--model", "/home/yaobc/model/Kimi-Linear-48B-A3B-Instruct",
+        "--plan", "artifacts/reproduction/plans/kimi-stepquant6.pt"
+      ],
+      "batches": {
+        "32": ["--batch", "32"],
+        "64": ["--batch", "64"],
+        "128": ["--batch", "128"],
+        "256": ["--batch", "256"],
+        "512": ["--batch", "512", "--attention-backend", "flashinfer", "--moe-config-dir", "configs/kernels/sglang_shared_prompt"]
+      }
+    }
+  }
+}

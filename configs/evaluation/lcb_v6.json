@@ -1,0 +1,27 @@
+{
+  "name": "lcb_v6",
+  "workload": "long",
+  "samples": 5,
+  "seed": 0,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 65536
+  },
+  "dataset": {
+    "repo": "livecodebench/code_generation_lite",
+    "subset": "release_v6",
+    "split": "test",
+    "revision": "0fe84c3912ea0c4d4a78037083943e8f0c4dd505"
+  },
+  "grader": "lcb",
+  "chat_template_kwargs": {
+    "enable_thinking": true
+  },
+  "protocol_notes": [
+    "Sampling settings from STEPQuant Sec.5.1.",
+    "Prompt templates and reasoning extraction are implementation choices; implemented in stepquant/evaluation/prepare.py and grade.py."
+  ],
+  "expected_tasks": 1055
+}

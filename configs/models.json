@@ -1,0 +1,31 @@
+{
+  "qwen": {
+    "model_path": "/home/yaobc/model/Qwen3.8-27B",
+    "trust_remote_code": false,
+    "weights": "bf16",
+    "plans": {
+      "stepquant4": "artifacts/reproduction/plans/qwen-stepquant4.pt",
+      "stepquant6": "artifacts/reproduction/plans/qwen-stepquant6.pt"
+    },
+    "calibration_python": ".venv-runtime/bin/python",
+    "reasoning_parser": "qwen3",
+    "protocol_notes": [
+      "Checkpoint chat template is used unchanged."
+    ]
+  },
+  "kimi": {
+    "model_path": "/home/yaobc/model/Kimi-Linear-48B-A3B-Instruct",
+    "trust_remote_code": true,
+    "weights": "bf16",
+    "plans": {
+      "stepquant4": "artifacts/reproduction/plans/kimi-stepquant4.pt",
+      "stepquant6": "artifacts/reproduction/plans/kimi-stepquant6.pt"
+    },
+    "calibration_python": ".venv-kimi/bin/python",
+    "reasoning_parser": null,
+    "protocol_notes": [
+      "Checkpoint chat template is used unchanged.",
+      "Kimi-Linear Instruct template has no enable_thinking switch; this flag does not turn the checkpoint into a thinking model."
+    ]
+  }
+}

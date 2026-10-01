@@ -1,0 +1,7 @@
+{
+  "name": "fp32",
+  "kind": "fp32",
+  "bits": 32,
+  "group_size": 32,
+  "group_axis": "v"
+}

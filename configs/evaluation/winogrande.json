@@ -1,0 +1,25 @@
+{
+  "name": "winogrande",
+  "workload": "short",
+  "samples": 1,
+  "seed": 0,
+  "sampling": {
+    "temperature": 0.0,
+    "max_tokens": 2048
+  },
+  "dataset": {
+    "repo": "allenai/winogrande",
+    "subset": "winogrande_xl",
+    "split": "validation",
+    "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5"
+  },
+  "grader": "generated_exact_match",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "few_shot": 0,
+  "protocol_notes": [
+    "Zero-shot greedy generation, at most 2048 output tokens, thinking explicitly disabled."
+  ],
+  "expected_tasks": 1267
+}

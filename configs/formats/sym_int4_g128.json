@@ -1,0 +1,7 @@
+{
+  "name": "sym_int4_g128",
+  "kind": "symmetric",
+  "bits": 4,
+  "group_size": 128,
+  "group_axis": "v"
+}

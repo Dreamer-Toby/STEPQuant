@@ -1,0 +1,26 @@
+.venv*/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+artifacts/
+*.pt
+*.safetensors
+
+# Local-only process documentation and data; README is published.
+docs/
+examples/calibration.txt
+datasets/
+data/
+models/
+checkpoints/
+*.bin
+*.ckpt
+*.gguf
+*.parquet
+*.arrow
+*.jsonl
+*.pdf
+*.log
+
+# Retired algorithm/kernel snapshots (local only).
+/artifacts/archive/

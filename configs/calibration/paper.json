@@ -1,0 +1,11 @@
+{
+  "source": "Salesforce/wikitext:wikitext-2-raw-v1:train",
+  "segments": 32,
+  "sequence_length": 2048,
+  "seed": 0,
+  "sample_every": 8,
+  "max_snapshots": 64,
+  "horizon": 2048,
+  "notes": "Paper fixes the dataset, segment count and length; snapshot reservoir size, seed and sampling interval are explicit implementation choices. Collect once for each weight checkpoint.",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+}

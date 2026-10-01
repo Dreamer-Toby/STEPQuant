@@ -1,0 +1,10 @@
+{
+  "workload": "short",
+  "max_running_requests": 256,
+  "kv_watermark": 0.6,
+  "context_length": 8192,
+  "chunked_prefill_size": 2048,
+  "disable_radix_cache": true,
+  "mamba_scheduler_strategy": "no_buffer",
+  "reserve_max_new_tokens": false
+}

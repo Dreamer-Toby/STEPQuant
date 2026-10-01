@@ -1,0 +1,28 @@
+{
+  "name": "gpqa_diamond",
+  "workload": "long",
+  "samples": 8,
+  "seed": 0,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 65536
+  },
+  "dataset": {
+    "repo": "Idavidrein/gpqa",
+    "subset": "gpqa_diamond",
+    "split": "train",
+    "revision": "83022cefff930aea54f654c0b282e74b9eeda5c6",
+    "source": "official git dataset.zip:gpqa_diamond.csv (commit in upstream.lock.json)"
+  },
+  "grader": "gpqa",
+  "chat_template_kwargs": {
+    "enable_thinking": true
+  },
+  "protocol_notes": [
+    "Sampling settings from STEPQuant Sec.5.1.",
+    "Prompt templates and reasoning extraction are implementation choices; implemented in stepquant/evaluation/prepare.py and grade.py."
+  ],
+  "expected_tasks": 198
+}

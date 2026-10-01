@@ -1,0 +1,7 @@
+{
+  "name": "stepquant6",
+  "kind": "stepquant",
+  "bits": 6,
+  "group_size": 32,
+  "group_axis": "v"
+}

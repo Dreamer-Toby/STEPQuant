@@ -1,0 +1,25 @@
+{
+  "name": "arc_challenge",
+  "workload": "short",
+  "samples": 1,
+  "seed": 0,
+  "sampling": {
+    "temperature": 0.0,
+    "max_tokens": 2048
+  },
+  "dataset": {
+    "repo": "allenai/ai2_arc",
+    "subset": "ARC-Challenge",
+    "split": "test",
+    "revision": "210d026faf9955653af8916fad021475a3f00453"
+  },
+  "grader": "generated_exact_match",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "few_shot": 0,
+  "protocol_notes": [
+    "Zero-shot greedy generation, at most 2048 output tokens, thinking explicitly disabled."
+  ],
+  "expected_tasks": 1172
+}

@@ -1,0 +1,27 @@
+{
+  "name": "math500",
+  "workload": "long",
+  "samples": 4,
+  "seed": 0,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 65536
+  },
+  "dataset": {
+    "repo": "HuggingFaceH4/MATH-500",
+    "subset": null,
+    "split": "test",
+    "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be"
+  },
+  "grader": "math500",
+  "chat_template_kwargs": {
+    "enable_thinking": true
+  },
+  "protocol_notes": [
+    "Sampling settings from STEPQuant Sec.5.1.",
+    "Prompt templates and reasoning extraction are implementation choices; implemented in stepquant/evaluation/prepare.py and grade.py."
+  ],
+  "expected_tasks": 500
+}

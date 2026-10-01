@@ -1,0 +1,25 @@
+{
+  "name": "lambada",
+  "workload": "short",
+  "samples": 1,
+  "seed": 0,
+  "sampling": {
+    "temperature": 0.0,
+    "max_tokens": 2048
+  },
+  "dataset": {
+    "repo": "EleutherAI/lambada_openai",
+    "subset": "en",
+    "split": "test",
+    "revision": "900124bf3b8235c6daf21033af9948b3f07346c4"
+  },
+  "grader": "generated_exact_match",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "few_shot": 0,
+  "protocol_notes": [
+    "Zero-shot greedy generation, at most 2048 output tokens, thinking explicitly disabled."
+  ],
+  "expected_tasks": 5153
+}

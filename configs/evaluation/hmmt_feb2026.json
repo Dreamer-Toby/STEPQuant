@@ -1,0 +1,27 @@
+{
+  "name": "hmmt_feb2026",
+  "workload": "long",
+  "samples": 64,
+  "seed": 0,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 65536
+  },
+  "dataset": {
+    "repo": "MathArena/hmmt_feb_2026",
+    "subset": null,
+    "split": "train",
+    "revision": "02fba4f74d8e68e73e66a02d540fd979c05c274c"
+  },
+  "grader": "matharena",
+  "chat_template_kwargs": {
+    "enable_thinking": true
+  },
+  "protocol_notes": [
+    "Sampling settings from STEPQuant Sec.5.1.",
+    "Prompt templates and reasoning extraction are implementation choices; implemented in stepquant/evaluation/prepare.py and grade.py."
+  ],
+  "expected_tasks": 33
+}

@@ -1,0 +1,7 @@
+{
+  "name": "dsq_int6",
+  "kind": "dsq",
+  "bits": 6,
+  "group_size": 128,
+  "group_axis": "k"
+}

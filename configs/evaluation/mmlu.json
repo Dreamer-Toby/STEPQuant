@@ -1,0 +1,25 @@
+{
+  "name": "mmlu",
+  "workload": "short",
+  "samples": 1,
+  "seed": 0,
+  "sampling": {
+    "temperature": 0.0,
+    "max_tokens": 2048
+  },
+  "dataset": {
+    "repo": "cais/mmlu",
+    "subset": "all",
+    "split": "test",
+    "revision": "c30699e8356da336a370243923dbaf21066bb9fe"
+  },
+  "grader": "generated_exact_match",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "few_shot": 0,
+  "protocol_notes": [
+    "Zero-shot greedy generation, at most 2048 output tokens, thinking explicitly disabled."
+  ],
+  "expected_tasks": 14042
+}

@@ -1,0 +1,25 @@
+{
+  "name": "openbookqa",
+  "workload": "short",
+  "samples": 1,
+  "seed": 0,
+  "sampling": {
+    "temperature": 0.0,
+    "max_tokens": 2048
+  },
+  "dataset": {
+    "repo": "allenai/openbookqa",
+    "subset": "main",
+    "split": "test",
+    "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+  },
+  "grader": "generated_exact_match",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "few_shot": 0,
+  "protocol_notes": [
+    "Zero-shot greedy generation, at most 2048 output tokens, thinking explicitly disabled."
+  ],
+  "expected_tasks": 500
+}
