@@ -10,8 +10,14 @@ Welcome to the official code repository for **[STEPQuant: When and Where Errors 
 
 Your star means a lot to us in developing this project! ⭐⭐⭐
 
+<p align="center">
+  <a href="imgs/introduction.mp4"><img src="imgs/introduction_preview.webp" alt="STEPQuant introduction video preview" width="90%"></a><br>
+  <a href="imgs/introduction.mp4">▶ Watch the introduction video</a>
+</p>
+
 ## 📰 News
 
+- [2026/10/12] 🔥 STEPQuant ranked #3 on [🤗 Hugging Face Daily Papers](https://huggingface.co/papers/2609.38169)!
 - [2026/09/30] 📄 Our [paper](https://arxiv.org/abs/2609.38169) is available on arXiv.
 - [2026/09/29] 🚀 STEPQuant code is available in this repository.
 
