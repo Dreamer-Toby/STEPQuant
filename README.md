@@ -110,3 +110,16 @@ More of our work on model quantization:
 - [**QuantVLA**: QuantVLA: Scale-Calibrated Post-Training Quantization for Vision-Language-Action Models](https://arxiv.org/abs/2602.20309)
 - [**LRQ-DiT**: LRQ-DiT: Log-Rotation Post-Training Quantization of Diffusion Transformers for Image and Video Generation](https://arxiv.org/abs/2508.03485)
 - [**IntactKV**: Improving Large Language Model Quantization by Keeping Pivot Tokens Intact](https://arxiv.org/abs/2403.01241)
+
+## ©️Citations 
+
+We kindly request that you cite our work if you utilize the code or reference our findings in your research:
+
+```BibTeX
+@article{yao2026stepquant,
+  title={STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization},
+  author={Yao, Bingchen and Xu, Haobo and Lin, Haokun and Wu, Yichen and Guo, Ziyu and Zhang, Renrui and Lu, Zhichao and Sun, Zhenan and Wei, Ying},
+  journal={arXiv preprint arXiv:2609.38169},
+  year={2026}
+}
+```
